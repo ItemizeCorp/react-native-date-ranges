@@ -195,7 +195,7 @@ export default class ComposePicker extends Component {
 									headFormat={this.props.headFormat}
 									customStyles={this.props.customStyles}
 									markText={this.props.markText}
-									onDatesChange={this.props.onDatesChange}
+									onDatesChange={this.onDatesChange}
 									isDateBlocked={this.isDateBlocked}
 									startDate={this.state.startDate}
 									endDate={this.state.endDate}
