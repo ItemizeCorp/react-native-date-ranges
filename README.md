@@ -83,6 +83,7 @@ export default class NewPicker extends React.Component{
 | **`customStyles`** | `Object` | optional. customize style e.g.({ placeholderText:{}, headerStyle:{} ... }) |
 | **`style`** | `Object` | Optional. date picker's style |
 | **`onConfirm`** | `Function` | Optional. call function after click button, that would return a date object {startDate:'', endDate:''} e.g( value=>console.log(value))|
+| **`onError`** | `Function` | Optional. Function that is called if no valid dates selected for ranged selection|
 | **`selectedBgColor`** | `String` | Optional. custom your selected date background color e.g {"black"} |
 | **`selectedTextColor`** | `String` | Optional. custom your selected date text color e.g {"black"} |
 | **`ButtonStyle`** | `Object` | Optional. custom your save button container style |
