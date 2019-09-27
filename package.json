@@ -1,7 +1,7 @@
 
 {
   "name": "react-native-date-ranges",
-  "version": "2.5.0",
+  "version": "2.5.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pohsiu/react-native-date-ranges"
+    "url": "https://github.com/ff-joaquin-rojas/react-native-date-ranges.git"
   },
   "dependencies": {
     "react": ">=16.0.0-alpha.12",
