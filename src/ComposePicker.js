@@ -160,16 +160,7 @@ export default class ComposePicker extends Component {
 	};
 
 	render() {
-		const {
-			customStyles = {},
-			headFormat,
-			markText,
-			onDatesChange,
-			selectedBgColor,
-			selectedTextColor,
-			mode,
-			centerAlign,
-		} = this.props;
+		const { customStyles = {}, centerAlign } = this.props;
 
 		let style = styles.stylish;
 		style = centerAlign ? { ...style } : style;
@@ -201,17 +192,17 @@ export default class ComposePicker extends Component {
 						<View stlye={{ flex: 1, flexDirection: 'column' }}>
 							<View style={{ height: '90%' }}>
 								<DateRange
-									headFormat={headFormat}
-									customStyles={customStyles}
-									markText={markText}
-									onDatesChange={onDatesChange}
+									headFormat={this.props.headFormat}
+									customStyles={this.props.customStyles}
+									markText={this.props.markText}
+									onDatesChange={this.props.onDatesChange}
 									isDateBlocked={this.isDateBlocked}
 									startDate={this.state.startDate}
 									endDate={this.state.endDate}
 									focusedInput={this.state.focus}
-									selectedBgColor={selectedBgColor || undefined}
-									selectedTextColor={selectedTextColor || undefined}
-									mode={mode || 'single'}
+									selectedBgColor={this.props.selectedBgColor || undefined}
+									selectedTextColor={this.props.selectedTextColor || undefined}
+									mode={this.props.mode || 'single'}
 									currentDate={this.state.currentDate}
 								/>
 							</View>
