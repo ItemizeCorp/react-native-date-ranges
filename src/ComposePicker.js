@@ -242,7 +242,7 @@ ComposePicker.propTypes = {
 
 ComposePicker.defaultProps = {
 	dateSplitter: '->',
-	onError: Alert.alert('Error', 'Please select a valid date'),
+	onError: () => Alert.alert('Error', 'Please select a valid date'),
 	returnFormat: defaultReturnFormat,
 	outFormat: defaultOutFormat,
 };
